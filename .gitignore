@@ -1,0 +1,92 @@
+# ==============================================================================
+# The Ick List - Git Ignore
+# ==============================================================================
+
+# Dependencies & Package Managers
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Build Artifacts & Distribution
+target/
+**/target/
+dist/
+**/dist/
+build/
+**/build/
+*.class
+*.jar
+*.war
+*.ear
+
+# Environment & Credentials (NEVER COMMIT SENSITIVE DATA)
+.env
+.env.*
+*.env
+*.pem
+*.key
+credentials
+aws-credentials*
+application-local.properties
+
+# Local Tools & Database Files
+tools/
+**/tools/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Design References & Raw Screenshots
+# Only commit final assets in frontend/public/assets/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+!frontend/public/assets/*.png
+!frontend/public/assets/*.jpg
+!frontend/public/assets/*.jpeg
+!frontend/public/assets/*.webp
+!frontend/public/assets/*.svg
+!frontend/src/assets/*.svg
+
+# IDEs & Editor Configuration
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Specification & Planning Docs (Exclude from public repo)
+01-PRD.md
+02-Architecture.md
+03-Tech-Stack.md
+04-Database.md
+05-API-Specs.md
+06-User-Flow.md
+07-Components.md
+08-Security.md
+09-Testing.md
+10-Tasks.md
+11-Design.md
+[0-9][0-9]-*.md
+docs/
+sample-transactions.csv
+!frontend/public/sample-transactions.csv
